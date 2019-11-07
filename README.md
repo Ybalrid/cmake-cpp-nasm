@@ -1,4 +1,4 @@
-#cmake-cpp-nasm
+# cmake-cpp-nasm
 
 This repository demonstrate how to mix 64bit intel assembly code and a C++ project while staying "cross-platform" (at least on the OS side of things)
 
