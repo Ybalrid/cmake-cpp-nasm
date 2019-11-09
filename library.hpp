@@ -1,8 +1,11 @@
 #pragma once
 
 #ifdef __cplusplus
+#include <cstdint>
 extern "C"
 {
+#else
+#include <stdint.h>
 #endif
 
 // The calling conventions are pretty much set in stone for x64, and correspond
@@ -12,7 +15,7 @@ int compute_answer();
 int sum_4_ints(int, int, int, int); // this is a prototype, the arguments don't have names but you
                                     // can put them there if you want :-)
 int  sum_6_ints(int, int, int, int, int, int);
-void increment_pointer_int(int*);
+void increment_pointer_int(int64_t*);
 void swap(int*, int*);
 
 #ifdef __cplusplus

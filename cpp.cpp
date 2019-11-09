@@ -11,16 +11,6 @@ extern "C" long long asm_foo(void);
 
 int main()
 {
-	const auto four = sum_4_ints(1,1,1,1);
-
 	const auto answer = compute_answer();
-
-	int a = 42, b = 32;
-	swap(&a, &b);
-
-	int not_zero = 0;
-	increment_pointer_int(&not_zero);
-
-
-	std::cout << asm_foo() << "\n";
+  std::cout << "42 is " << answer << "\n";
 }
