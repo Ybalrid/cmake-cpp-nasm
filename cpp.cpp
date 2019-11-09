@@ -6,11 +6,23 @@
 extern "C" long long asm_foo(void);
 
 //There's a small library of useless functions defined in assemby called library.asm and
-//a header full of conrrespounding C extern symbols called library.hpp
+//a header full of corresponding C extern symbols called library.hpp
 #include "library.hpp"
 
 int main()
 {
+	if(asm_is_windows())
+	{
+		std::cout << "asm code knows we are on windows!\n";
+	}
+	else
+	{
+		std::cout << "NOT running on windows!\n";
+	}
+
 	const auto answer = compute_answer();
-  std::cout << "42 is " << answer << "\n";
+	std::cout << "42 is " << answer << "\n";
+
+	int64_t not_zero = 0;
+	increment_pointer_int64(&not_zero);
 }
