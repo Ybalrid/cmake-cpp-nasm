@@ -58,3 +58,10 @@ This will permit to call the foo function.
 
 
 To learn more about how to pass arguments and use the stack in your assembly functions, you need to search about X86_64 function calling conventions and respect them ;-)
+
+Beware! These calling conventions are different between compilers and operating systems!
+
+Here's the relevant documentation for MSVC (and Microsoft Windows in genral as far as I can tel) for x64 code: https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=vs-2019
+
+For other platform (everything UNIX basically) the System V AMD64 calling convention seems to be the norm, a short summary can be found on Wikipedia here : https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI
+
