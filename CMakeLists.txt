@@ -12,5 +12,5 @@ if(APPLE)
 endif(APPLE)
 
 #Make a EXE with cpp and asm files
-add_executable(cmake-cpp-nasm cpp.cpp asm.asm)
+add_executable(cmake-cpp-nasm cpp.cpp asm.asm library.asm library.hpp)
 
