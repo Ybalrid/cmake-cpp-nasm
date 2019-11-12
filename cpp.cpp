@@ -11,6 +11,8 @@ extern "C" long long asm_foo(void);
 
 int main()
 {
+    std::cout << asm_foo() << "\n";
+
 	if(asm_is_windows())
 	{
 		std::cout << "asm code knows we are on windows!\n";
@@ -25,4 +27,6 @@ int main()
 
 	int64_t not_zero = 0;
 	increment_pointer_int64(&not_zero);
+
+	std::cout << "not_zero was incremented by asm code to value : " << not_zero << "\n";
 }
