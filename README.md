@@ -1,6 +1,6 @@
 # cmake-cpp-nasm
 
-This repository demonstrate how to mix 64bit intel assembly code and a C++ project while staying "cross-platform" (at least on the OS side of things)
+This repository demonstrate how to mix x86_64 (AMD64) assembly code and a C++ project while staying as "cross-platform" as possible (at least on the OS side of things)
 
 This has been tested under:
  - Visual Studio 2019 + NASM 2.14.02 on Windows 10 64bit
