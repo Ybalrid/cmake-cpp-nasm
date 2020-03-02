@@ -15,7 +15,7 @@ endif(APPLE)
 #If the goal is to interact with C++ code and assembly code, calling convention
 #changes between platform, some adjustment on the assembly code is required.
 
-#The following will pre-define a NASM macro "WIN". This permit to conditionally assemble
+#The following will pre-define a NASM macro "WIN32". This permit to conditionally assemble
 #code in the following manner :
 #  %ifdef WIN32
 #     ;code for Windows ABI
